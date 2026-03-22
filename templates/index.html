@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meat Spoilage Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🥩 Meat Spoilage Detection</h1>
+
+    <!-- Upload -->
+    <input type="file" id="imageInput" onchange="previewImage()">
+    <button onclick="analyze()">Analyze Meat</button>
+
+    <!-- Preview BEFORE prediction -->
+    <div class="preview-box">
+        <h3>Uploaded Image</h3>
+        <img id="previewImage" />
+    </div>
+
+    <!-- Prediction -->
+    <div class="result-box">
+        <h2 id="label">---</h2>
+        <h3 id="confidence">---</h3>
+    </div>
+
+    <!-- GradCAM Results -->
+    <div class="images-container">
+        <div>
+            <h4>Original</h4>
+            <img id="img_original">
+        </div>
+        <div>
+            <h4>Heatmap (GradCAM)</h4>
+            <img id="img_heatmap">
+        </div>
+        <div>
+            <h4>Overlay</h4>
+            <img id="img_overlay">
+        </div>
+        <div>
+            <h4>Localization</h4>
+            <img id="img_local">
+        </div>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

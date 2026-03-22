@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meat Spoilage Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🍖 Meat Freshness Detection</h1>
+
+    <div class="upload-box">
+        <input type="file" id="imageInput">
+        <button onclick="analyze()">Analyze</button>
+    </div>
+
+    <div class="result-box">
+
+        <div class="prediction">
+            <h2 id="label">Prediction: -</h2>
+            <h3 id="confidence">Confidence: -</h3>
+        </div>
+
+        <div class="image-panel">
+            <img id="outputImage" src="" />
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
