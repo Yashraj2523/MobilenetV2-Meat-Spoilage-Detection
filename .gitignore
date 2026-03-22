@@ -1,0 +1,7 @@
+*.h5
+*.pth
+*.pt
+__pycache__/
+*.pyc
+venv/
+.env
